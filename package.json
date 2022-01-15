@@ -1,10 +1,12 @@
+es (16 sloc)  335 Bytes
+  
 {
-  "name": "BoranGkdn",
-  "version": "0.0.1",
-  "description": "BoranGkdn tarafından yapılan gelişmiş süpervizör bot.",
+  "name": "borangkdn-qdb-supervisor",
+  "version": "1.0.0",
+  "description": "",
   "main": "borangkdn.js",
   "scripts": {
-    "start": "node borangkdn.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "BoranGkdn",
   "license": "MIT",
@@ -31,14 +33,5 @@
     "quick.db": "^7.1.3",
     "snekfetch": "^4.0.4",
     "superagent": "^6.1.0"
-  },
-  "engines": {
-    "node": "12.x"
-  },
-  "keywords": [
-    "BoranGkdn",
-    "BoranGkdn",
-    "BoranGkdn",
-    "BoranGkdn"
-  ]
-}      
+  }
+}
