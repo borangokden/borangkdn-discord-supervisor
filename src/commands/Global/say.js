@@ -11,7 +11,7 @@ module.exports = {
         var Voice = message.guild.members.cache.filter(s => s.voice.channel).size;
         var Boost = message.guild.premiumSubscriptionCount;
 
-        message.channel.send(new MessageEmbed().setFooter("YOUTUBE MATTHE", message.guild.iconURL).setAuthor(message.member.displayName, message.author.avatarURL({ dynamic: true })).setDescription(`
+        message.channel.send(new MessageEmbed().setFooter("YOUTUBE BORANGKDN", message.guild.iconURL).setAuthor(message.member.displayName, message.author.avatarURL({ dynamic: true })).setDescription(`
     \`•\` Sunucumuzda toplam **${TotalMember}** kullanıcı bulunuyor.
     \`•\` Sunucumuzda toplam **${Online}** aktif kullanıcı bulunuyor.
     \`•\` Seste **${Voice}** kullanıcı bulunuyor.
