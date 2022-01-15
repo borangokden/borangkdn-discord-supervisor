@@ -10,7 +10,7 @@ module.exports = {
       .setAuthor(`${user.tag} Avatar:`)
       .setImage(user.displayAvatarURL({ dynamic: true }))
       .setTimestamp()
-      .setFooter("YOUTUBE MATTHE", message.guild.iconURL())
+      .setFooter("YOUTUBE BORANGKDN", message.guild.iconURL())
     message.channel.send(embed);
   } else {
     const embed = new Discord.MessageEmbed()
@@ -20,7 +20,7 @@ module.exports = {
       )
       .setImage(message.author.avatarURL({ dynamic: true }))
       .setTimestamp()
-      .setFooter("YOUTUBE MATTHE", message.guild.iconURL())
+      .setFooter("YOUTUBE BORANGKDN", message.guild.iconURL())
     message.channel.send(embed);
 
   }
