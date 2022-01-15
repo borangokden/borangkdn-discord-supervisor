@@ -14,19 +14,11 @@ module.exports = {
             user.forEach(r => {
                 r.roles.add(config.registration.unregistered)
             })
-            const info = new Discord.MessageEmbed()
-                .setAuthor(" " + author.username + " ", author.avatarURL())
-                .setColor("RANDOM")
-                .setFooter("YOUTUBE BORANGKDN", message.guild.iconURL())
-                .setDescription(`Sunucumuzda rolü olmayan " **` + user.size + `** " kişiye kayıtsız rolü verildi!`)
-            return channel.send(info)
+            message.channel.send(embed.setDescription(`Sunucumuzda rolü olmayan " **` + user.size + `** " kişiye kayıtsız rolü verildi!`)
+            
         } else {
-            const use = new Discord.MessageEmbed()
-                .setAuthor("" + author.username + " ", author.avatarURL())
-                .setColor("RANDOM")
-                .setFooter("YOUTUBE BORANGKDN", message.guild.iconURL())
-                .setDescription("Sunucumuzda rolü olmayan \`" + user.size + "\` kişi var. Bu kişilere üye rolü vermek için \`.rolsüz ver\` komutunu uygulayın!")
-            return channel.send(use)
+            message.channel.send(embed.setDescription("Sunucumuzda rolü olmayan \`" + user.size + "\` kişi var. Bu kişilere üye rolü vermek için \`.rolsüz ver\` komutunu uygulayın!")
+           
         }
     }
 }
