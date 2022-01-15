@@ -1,8 +1,10 @@
 {
     "bot": {
+        "token": "BOT TOKEN",
         "owner": "796263552771817472",
         "prefix": ".",
         "BotStatus": "YOUTUBE BORANGKDN",
+        "BotFooter": "YOUTUBE BORANGKDN",
         "cooldown": 8
     },
     "logs": {
