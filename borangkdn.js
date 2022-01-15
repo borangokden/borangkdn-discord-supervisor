@@ -22,7 +22,7 @@ readdir("./src/commands/", (err, files) => {
             if (err2) console.log(err2)
             files2.forEach(file => {
                 let prop = require(`./src/commands/${f}/` + file);
-                console.log(`[MATTHE-COMMAND] ${prop.name} yüklendi!`);
+                console.log(`[BORANGKDN-COMMAND] ${prop.name} yüklendi!`);
                 commands.set(prop.name, prop);
                 prop.aliases.forEach(alias => {
                     aliases.set(alias, prop.name);
@@ -38,7 +38,7 @@ readdir("./src/events", (err, files) => {
         let prop = require(`./src/events/${file}`);
         if (!prop.conf) return;
         client.on(prop.conf.name, prop)
-        console.log(`[MATTHE-EVENT] ${prop.conf.name} yüklendi!`);
+        console.log(`[BORANGKDN-EVENT] ${prop.conf.name} yüklendi!`);
     });
 });
 
@@ -96,10 +96,10 @@ Aşağıda bulunan butonlardan **Etkinlik Katılımcısı alarak konserlerimizde
     }
 });
 
-client.login(process.env.token).then(x => console.log(`Bot ${client.user.username} olarak giriş yaptı!`)).catch(err => console.log(`Bot Giriş yapamadı sebep: ${err}`));
+client.login(config.bot.token).then(x => console.log(`Bot ${client.user.username} olarak giriş yaptı!`)).catch(err => console.log(`Bot Giriş yapamadı sebep: ${err}`));
 
 client.on('message', async message => {
-if (message.content === 'matthe!fakekatıl') { 
+if (message.content === 'bg!fakekatıl') { 
   client.emit('guildMemberAdd', message.member || await message.guild.fetchMember(message.author));
     }
 });
