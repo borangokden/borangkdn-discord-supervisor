@@ -25,7 +25,7 @@ module.exports = {
       .setColor("RED")
       .setTimestamp()
       .setAuthor(message.member.displayName, message.author.avatarURL({ dynamic: true }))
-      .setFooter("YOUTUBE MATTHE")
+      .setFooter("YOUTUBE BORANGKDN")
       .setDescription(`
       ${user ? user.toString() : user.username} kişisi sunucudan banlandı!
       
