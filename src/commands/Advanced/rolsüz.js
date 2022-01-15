@@ -14,10 +14,10 @@ module.exports = {
             user.forEach(r => {
                 r.roles.add(config.registration.unregistered)
             })
-            message.channel.send(embed.setDescription(`Sunucumuzda rolü olmayan " **` + user.size + `** " kişiye kayıtsız rolü verildi!`)
+            message.channel.send(embed.setDescription(`Sunucumuzda rolü olmayan " **` + user.size + `** " kişiye kayıtsız rolü verildi!`))
             
         } else {
-            message.channel.send(embed.setDescription("Sunucumuzda rolü olmayan \`" + user.size + "\` kişi var. Bu kişilere üye rolü vermek için \`.rolsüz ver\` komutunu uygulayın!")
+            message.channel.send(embed.setDescription("Sunucumuzda rolü olmayan \`" + user.size + "\` kişi var. Bu kişilere üye rolü vermek için \`.rolsüz ver\` komutunu uygulayın!"))
            
         }
     }
