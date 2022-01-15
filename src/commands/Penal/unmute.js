@@ -18,7 +18,7 @@ module.exports = {
       .setColor("GREEN")
       .setTimestamp()
       .setAuthor(message.member.displayName, message.author.avatarURL({ dynamic: true }))
-      .setFooter("YOUTUBE MATTHE")
+      .setFooter("YOUTUBE BORANGKDN")
       .setDescription(`
       ${member ? member.toString(): member.username} kullanıcısının susturması kaldırıldı!
 
