@@ -1,7 +1,7 @@
 {
   "name": "BoranGkdn",
   "version": "0.0.1",
-  "description": "BoranGkdn tarafından yapılan veri görüntüleyen register bot.",
+  "description": "BoranGkdn tarafından yapılan gelişmiş süpervizör bot.",
   "main": "borangkdn.js",
   "scripts": {
     "start": "node borangkdn.js"
