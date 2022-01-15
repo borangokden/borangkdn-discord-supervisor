@@ -20,7 +20,7 @@ module.exports = async client => {
         const embed = new MessageEmbed()
             .setColor("RANDOM")
             .setAuthor(message.member.displayName, message.author.avatarURL({ dynamic: true, size: 2048 }))
-            .setFooter(("YOUTUBE MATTHE"), message.guild.iconURL())  
+            .setFooter((config.bot.BotFooter), ownerr.avatarURL({ dynamic: true }))
         this.send(embed.setDescription(text)).then(x => { if (x.deletable) x.delete({ timeout: 10000 }) });
     }
 
