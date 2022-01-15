@@ -15,14 +15,13 @@ module.exports = {
         let yetkili = message.guild.members.cache.filter(x => {
             return x.user.username.includes(config.registration.GuildTag) && x.voice.channel && x.roles.cache.has(config.registration.staff)
         }).size
-        const mesaj = new Discord.MessageEmbed()
-            .setDescription(`Sesli kanallarda toplam **${ses}** kullanıcı bulunmaktadır!
+        message.channel.send(embed.setDescription(`Sesli kanallarda toplam **${ses}** kullanıcı bulunmaktadır!
 
 \`-\` Public odalarda **${pub}** kullanıcı bulunmaktadır!
 \`-\` Ses kanallarında **${notag}** normal kullanıcı bulunmaktadır!
 \`-\` Ses kanallarında **${tagges}** taglı kullanıcı bulunmaktadır!
 \`-\` Ses kanallarında toplam **${yetkili}** yetkili bulunmaktadır!
-`)
-        return message.channel.send(mesaj)
+`))
+        
     }
 }
