@@ -5,14 +5,50 @@
         "prefix": ".",
         "BotStatus": "YOUTUBE BORANGKDN",
         "BotFooter": "YOUTUBE BORANGKDN",
-        "cooldown": 8
+        "cooldown": 8,
+        "iltifatsize": 100
+    },
+    "penals": {
+        "ban": {
+            "staff": "BAN YETKİLİSİ ID",
+            "log": "BAN LOG ID",
+            "limit": 3
+        },
+        "jail": {
+            "staff": "JAİL YETKİLİSİ ID",
+            "roles": "CEZALI ROLÜ ID",
+            "log": "JAİL LOG ID",
+            "limit": 5
+        },
+        "mute": {
+            "staff": "MUTE YETKİLİSİ ID",
+            "roles": "MUTELİ ROLÜ ID",
+            "log": "MUTE LOG ID",
+            "limit": 5
+        },
+        "warn": {
+            "staff": "WARN YETKİLİSİ ID",
+            "log": "WARN LOG ID"
+        },
+        "points": {
+            "mutepoints": "10",
+            "banpoints": "30",
+            "jailpoints": "20",
+            "warnpoints": "5"
+        }
     },
     "logs": {
+        "messagelog": "MESAJ LOG KANALI ID",
+        "voicelog": "SES LOG KANALI ID",
         "taglog": "TAG LOG KANALI ID"
     },
     "roles": {
+        "boosterrole": "BOOSTER ROLÜ ID",
         "viprole": "VIP ROLÜ ID",
-        "team": "TAGLI ROLÜ ID"
+        "designerrole": "TASARIMCI ROLÜ ID",
+        "musiciansrole": "MÜZİSYEN ROLÜ ID",
+        "team": "TAGLI ROLÜ ID",
+        "sponsored": "SPONSOR ROLÜ ID"
     },
     "channels": {
         "chat": "CHAT KANALI ID",
@@ -20,10 +56,13 @@
         "welcomechannel": "HOŞ GELDİN KANALI ID",
         "rules": "KURALLAR KANALI ID"
     },
+    "parents": {
+        "publicparents": "PUBLİC KATEGORİSİ ID"
+    },
     "registration": {
         "unregistered": "KAYITSIZ ROLÜ ID",
-        "man": ["ERKEK ROLÜ ID", "2. ERKEK ROLÜ ID YOKSA TIRNAK İSARETİNİ SİL"],
-        "woman": ["KADIN ROLÜ ID", "2. KADIN ROLÜ ID YOKSA TIRNAK İSARETİNİ SİL"],
+        "man": ["ERKEK ROLÜ ID", "2. ERKEK ROLÜ ID YOKSA SİL"],
+        "woman": ["KADIN ROLÜ ID", "2. KADIN ROLÜ ID YOKSA SİL"],
         "staff": "REGİSTER ROLÜ ID",
         "GuilDTag": "TAGINIZ",
         "TagSymbol": "Kayıt Olunca İsim Yaşın Önüne Koyacağı Sembol",
@@ -45,6 +84,9 @@
         "tada": "TADA EMOJİSİ ID",
         "yes": "ONAY EMOJİSİ ID",
         "no": "RED EMOJİSİ ID"
-
+    },
+    "buttons": {
+        "giveaway": "ÇEKİLİŞ KATILIMCISI ROLÜ ID",
+        "activity": "ETKİNLİK KATILIMCISI ROLÜ ID"
     }
-} 
+}
