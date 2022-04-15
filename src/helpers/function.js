@@ -19,7 +19,7 @@ module.exports = async client => {
     TextChannel.prototype.error = async function (message, text) {
         const embed = new MessageEmbed()
             .setColor("RANDOM")
-            .setAuthor(message.member.displayName, message.author.avatarURL({ dynamic: true, size: 2048 }))
+            .setAuthor(message.member.displayName))
             .setFooter((config.bot.BotFooter))
         this.send(embed.setDescription(text)).then(x => { if (x.deletable) x.delete({ timeout: 10000 }) });
     }
