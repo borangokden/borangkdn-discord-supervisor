@@ -1,4 +1,4 @@
-# Boran Gökden sÜPERVİZÖR System Bot Altyapısı Hakkında Bilgiler!
+# Boran Gökden Süpervizör System Bot Altyapısı Hakkında Bilgiler!
 
 Discord sunucularınız için kodlanmış " Süpervizör ( Register + Moderation + Button System ) projesidir, iyi kullanımlar!
 
